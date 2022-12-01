@@ -6,5 +6,11 @@
             "cargoArgs": ["run"],
             "executableArgs": ["1.1"],
         },
+        {
+            "type": "cargo",
+            "name": "Run Day 1.2",
+            "cargoArgs": ["run"],
+            "executableArgs": ["1.2"],
+        },
     ]
 }
