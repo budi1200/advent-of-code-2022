@@ -60,8 +60,8 @@ fn fix_outcome(moves: Vec<&str>) -> usize {
     return player_mapped + outcome_index + 1;
 }
 
-pub fn day2_1() {
-    let moves_str = fs::read_to_string("./data/day2.txt").expect("Failed to read file");
+pub fn day02_1() {
+    let moves_str = fs::read_to_string("./data/day02.txt").expect("Failed to read file");
     let moves_lines = moves_str.lines();
 
     let mut total_outcome = 0;
@@ -76,8 +76,8 @@ pub fn day2_1() {
     println!("Total outcome: {}", total_outcome);
 }
 
-pub fn day2_2() {
-    let moves_str = fs::read_to_string("./data/day2.txt").expect("Failed to read file");
+pub fn day02_2() {
+    let moves_str = fs::read_to_string("./data/day02.txt").expect("Failed to read file");
     let moves_lines = moves_str.lines();
 
     let mut total_outcome = 0;

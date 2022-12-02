@@ -1,7 +1,7 @@
 use std::fs;
 
 fn get_sums() -> Vec<i32> {
-    let calories_str = fs::read_to_string("./data/day1.txt").expect("Failed to read file");
+    let calories_str = fs::read_to_string("./data/day01.txt").expect("Failed to read file");
     let calories_lines = calories_str.lines();
 
     let mut sums = Vec::<i32>::new();
@@ -20,14 +20,14 @@ fn get_sums() -> Vec<i32> {
     return sums;
 }
 
-pub fn day1_1() {
+pub fn day01_1() {
     let mut sums = get_sums();
 
     sums.sort();
     println!("Biggest sum: {:?}", sums.last().expect("Expected a value"));
 }
 
-pub fn day1_2() {
+pub fn day01_2() {
     let mut sums = get_sums();
 
     sums.sort();
