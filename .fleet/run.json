@@ -36,5 +36,17 @@
             "cargoArgs": ["run"],
             "executableArgs": ["3.2"],
         },
+        {
+            "type": "cargo",
+            "name": "Run Day 4.1",
+            "cargoArgs": ["run"],
+            "executableArgs": ["4.1"],
+        },
+        {
+            "type": "cargo",
+            "name": "Run Day 4.2",
+            "cargoArgs": ["run"],
+            "executableArgs": ["4.2"],
+        },
     ]
 }
