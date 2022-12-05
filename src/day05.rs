@@ -1,7 +1,7 @@
 use regex::Regex;
 use std::fs;
 
-fn parse_crane(data: &str) -> Vec<Vec<&str>> {
+fn parse_cargo(data: &str) -> Vec<Vec<&str>> {
     let mut cargo: Vec<Vec<&str>> = Vec::new();
 
     data.lines().rev().skip(1).for_each(|f| {
@@ -34,11 +34,11 @@ fn parse_crane(data: &str) -> Vec<Vec<&str>> {
 
 pub fn day05_1() {
     let data_str = fs::read_to_string("./data/day05.txt").expect("Failed to read file");
-    let sections = data_str.split_terminator("\n\n").collect::<Vec<&str>>();
-    let moves = sections.last().unwrap();
-
-    let mut cargo = parse_crane(sections.first().unwrap()).clone();
+    let mut sections = data_str.split_terminator("\n\n");
     let re = Regex::new(r"([0-9]+)").unwrap();
+
+    let mut cargo = parse_cargo(sections.next().unwrap()).clone();
+    let moves = sections.next().unwrap();
 
     moves.lines().for_each(|f| {
         //        println!("{:?}", f);
@@ -66,11 +66,11 @@ pub fn day05_1() {
 
 pub fn day05_2() {
     let data_str = fs::read_to_string("./data/day05.txt").expect("Failed to read file");
-    let sections = data_str.split_terminator("\n\n").collect::<Vec<&str>>();
-    let moves = sections.last().unwrap();
-
-    let mut cargo = parse_crane(sections.first().unwrap()).clone();
+    let mut sections = data_str.split_terminator("\n\n");
     let re = Regex::new(r"([0-9]+)").unwrap();
+
+    let mut cargo = parse_cargo(sections.next().unwrap()).clone();
+    let moves = sections.next().unwrap();
 
     moves.lines().for_each(|f| {
         //        println!("{:?}", f);
