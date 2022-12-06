@@ -3,6 +3,7 @@ mod day02;
 mod day03;
 mod day04;
 mod day05;
+mod day06;
 
 use std::collections::HashMap;
 use std::env;
@@ -19,7 +20,9 @@ fn get_available_days<'a>() -> HashMap<&'a str, fn()> {
         ("4.2", day04::day04_2 as fn()),
         ("5.1", day05::day05_1 as fn()),
         ("5.2", day05::day05_2 as fn()),
-    ]);
+        ("6.1", day06::day06_1 as fn()),
+        ("6.2", day06::day06_2 as fn()),
+        ]);
 }
 
 // Usage: cargo run <day>.<part>
