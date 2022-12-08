@@ -84,5 +84,17 @@
             "cargoArgs": ["run"],
             "executableArgs": ["7.2"],
         },
+        {
+            "type": "cargo",
+            "name": "Run Day 8.1",
+            "cargoArgs": ["run"],
+            "executableArgs": ["8.1"],
+        },
+        {
+            "type": "cargo",
+            "name": "Run Day 8.2",
+            "cargoArgs": ["run"],
+            "executableArgs": ["8.2"],
+        },
     ]
 }
