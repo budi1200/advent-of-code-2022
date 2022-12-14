@@ -156,5 +156,17 @@
             "cargoArgs": ["run"],
             "executableArgs": ["13.2"],
         },
+        {
+            "type": "cargo",
+            "name": "Run Day 14.1",
+            "cargoArgs": ["run"],
+            "executableArgs": ["14.1"],
+        },
+        {
+            "type": "cargo",
+            "name": "Run Day 14.2",
+            "cargoArgs": ["run"],
+            "executableArgs": ["14.2"],
+        },
     ]
 }

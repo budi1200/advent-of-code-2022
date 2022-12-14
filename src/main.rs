@@ -11,6 +11,7 @@ mod day10;
 mod day11;
 mod day12;
 mod day13;
+mod day14;
 
 use std::collections::HashMap;
 use std::env;
@@ -43,6 +44,8 @@ fn get_available_days<'a>() -> HashMap<&'a str, fn()> {
         ("12.2", day12::day12_2 as fn()),
         ("13.1", day13::day13_1 as fn()),
         ("13.2", day13::day13_2 as fn()),
+        ("14.1", day14::day14_1 as fn()),
+        ("14.2", day14::day14_2 as fn()),
     ]);
 }
 
